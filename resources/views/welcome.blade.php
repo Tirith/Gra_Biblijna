@@ -9,6 +9,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link href="{{ url('css/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css"/>
 
         <!-- Styles -->
         <style>
@@ -63,6 +64,7 @@
                 margin-bottom: 30px;
             }
         </style>
+
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -77,9 +79,12 @@
                 </div>
             @endif
 
-            <div class="content">
+            <div class="container">
                 <div class="title m-b-md">
                    TU BEDZIE GRA
+                   <div class="btn btn-primary">CLICK</div>
+
+
                 </div>
 
                 <div class="links">
@@ -87,5 +92,9 @@
                 </div>
             </div>
         </div>
+        <script src={{ url('css/bootstrap/jquery.min.js') }} type="text/javascript"></script>
+        <script src={{ url('css/bootstrap/js/bootstrap.min.js') }} type="text/javascript"></script>
+        
+        
     </body>
 </html>
