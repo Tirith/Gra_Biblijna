@@ -25,6 +25,26 @@ class DatabaseSeeder extends Seeder
                                 'poprawna' => 2,                          
                                 'trudnosc' => 1,                          
                                    ]);
+
+        DB::table('questions')->insert([
+                                'pytanie' => 'Ile osób przeżyło potop?',                               
+                                'odp1' => '1',                          
+                                'odp2' => '4',                          
+                                'odp3' => '8',                          
+                                'odp4' => '24',                          
+                                'poprawna' => 3,                          
+                                'trudnosc' => 1,                          
+                                   ]);
+
+        DB::table('questions')->insert([
+                                'pytanie' => 'Z czego był znany Samson?',                               
+                                'odp1' => 'Był przystojny',                          
+                                'odp2' => 'Żył bardzo długo',                          
+                                'odp3' => 'Był uczniem Jezusa',                          
+                                'odp4' => 'Był bardzo silny',                          
+                                'poprawna' => 4,                          
+                                'trudnosc' => 1,                          
+                                   ]);
     }
 
     
