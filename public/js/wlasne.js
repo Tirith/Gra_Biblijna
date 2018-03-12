@@ -10,7 +10,7 @@ function countDown() {
 	pojemnik_na_czas.html('Czas: ' + poz_czas + 's');
 	poz_czas--;
 
-	if (poz_czas==10) 
+	if (poz_czas==-1) 
 		{
 			button_game.html('Rozpocznij od nowa');
 			clearInterval(stoping);
