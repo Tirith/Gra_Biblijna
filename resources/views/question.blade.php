@@ -81,9 +81,17 @@
                     </div>
                 </div >
 
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 flex-center ">
+                        <span class="pytanie_nag" ><span class="glyphicon glyphicon-arrow-down"></span>Pytanie<span class="glyphicon glyphicon-arrow-down"></span>
+                    </div>
+                </div >
+
+                
+
                 <div class="row pytanie">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <span >Pytanie: {{$pytanie->pytanie}}</span>
+                        <span >{{$pytanie->pytanie}}</span>
                     </div>
                 </div >
 
@@ -91,8 +99,9 @@
                    <div class="col-sm-3 col-md-3 col-lg-3">
                     <div >
                       <div class="odpowiedz">
-                        <h5>Odpowiedz 1</h5>
-                            {{$pytanie->odp1}}
+                        <h5>Odpowiedź 1</h5>
+                            {{$pytanie->odp1}}</br>
+                           
                       </div>
                     </div>
                    </div>
@@ -100,8 +109,8 @@
                    <div class="col-sm-3 col-md-3 col-lg-3">
                     <div class="">
                       <div class="odpowiedz">
-                        <h5>Odpowiedz 2</h5>
-                         {{$pytanie->odp2}}
+                        <h5>Odpowiedź 2</h5>
+                         {{$pytanie->odp2}}</br>
                       </div>
                     </div>
                    </div>
@@ -109,8 +118,8 @@
                     <div class="col-sm-3 col-md-3 col-lg-3">
                     <div class="">
                       <div class="odpowiedz">
-                        <h5>Odpowiedz 3</h5>
-                            {{$pytanie->odp3}}
+                        <h5>Odpowiedź 3</h5>
+                            {{$pytanie->odp3}}</br>
                       </div>
                     </div>
                    </div>
@@ -118,16 +127,29 @@
                     <div class="col-sm-3 col-md-3 col-lg-3">
                     <div class="">
                       <div class="odpowiedz">
-                        <h5>Odpowiedz 4</h5>
-                            {{$pytanie->odp4}}
+                        <h5>Odpowiedź 4</h5>
+                            {{$pytanie->odp4}}</br>
                       </div>
                     </div>
                    </div>
-                   
-                   
-
-
                 </div>
+
+                <div  class="row">
+                      <hr noshade="noshade" />
+                    <div id="czas" class="col-md-12 col-lg-12 czas">
+                       Czas: 15s
+                    </div>
+                </div >
+
+
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 czas">
+                        
+                       <div  class="next"> <a href="{{ url('/') }}" class="next" id="button_game">Koniec</a></div>
+                    </div>
+                </div >
+
+               
 
                 
             </div>
@@ -135,6 +157,33 @@
         <script src={{ url('css/bootstrap/jquery.min.js') }} type="text/javascript"></script>
         <script src={{ url('css/bootstrap/js/bootstrap.min.js') }} type="text/javascript"></script>
         <script src={{ url('js/wlasne.js') }} type="text/javascript"></script>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() {
+            timer();
+            }, false);
+
+            var tile = document.querySelectorAll('.odpowiedz');
+            const good = document.createElement('span');
+            const bad = document.createElement('span');
+
+
+            for(var i = 0; i< tile.length; ++i) 
+                {
+                    tile[i].onclick = function() 
+                        { 
+                            good.classList.add("glyphicon");
+                            good.classList.add("glyphicon-ok");
+                            good.style.setProperty("color", "#1C9B07");
+
+                            bad.classList.add("glyphicon");
+                            bad.classList.add("glyphicon-remove");
+                            bad.style.setProperty("color", "#F50B16");
+
+
+                            this.appendChild(good);
+                        }
+                }
+        </script>
         
         
     </body>

@@ -45,6 +45,16 @@ class DatabaseSeeder extends Seeder
                                 'poprawna' => 4,                          
                                 'trudnosc' => 1,                          
                                    ]);
+
+        DB::table('questions')->insert([
+                                'pytanie' => 'W jakim mieście urodził się Jezus?',                               
+                                'odp1' => 'Betlejem',                          
+                                'odp2' => 'Nazaret',                          
+                                'odp3' => 'Kana Galilejska',                          
+                                'odp4' => 'Efez',                          
+                                'poprawna' => 1,                          
+                                'trudnosc' => 1,                          
+                                   ]);
     }
 
     

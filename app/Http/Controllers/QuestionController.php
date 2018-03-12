@@ -1,10 +1,9 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Question;
-
+session_start();
 class QuestionController extends Controller
 {
     /**
@@ -14,9 +13,18 @@ class QuestionController extends Controller
      */
     public function index()
     {
-        $losuj = rand(1,3);
-        $pytanie = Question::findOrFail($losuj);
 
+        if (isset($_SESSION['losuj'])){
+            $ile = Question::count();
+            $losowe_id = rand(1, $ile);
+            $pytanie = Question::findOrFail($losowe_id);
+            $_SESSION['losuj']++;
+        } else{
+            $_SESSION['losuj'] = 1;    
+        }
+        
+        
+        $ile = Question::count();
         return view('question', array('pytanie' => $pytanie));
     }
 

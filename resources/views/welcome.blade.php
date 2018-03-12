@@ -1,3 +1,10 @@
+<?php 
+session_start();
+$_SESSION['losuj']=1;
+
+
+?>
+
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
@@ -29,8 +36,8 @@
                <h2 class="logo">Quiz Bibliny</h2>
 
               <div class="start"> <a href="{{ url('/pytania') }}" class="start">START</a></div>
-
-                
+      
+               
             </div>
         
         <script src={{ url('css/bootstrap/jquery.min.js') }} type="text/javascript"></script>
