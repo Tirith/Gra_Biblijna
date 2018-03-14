@@ -60,8 +60,20 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 45px;
 	color:#E7A14E;
+	
+}
 
+.zanikanie{
+	animation-name: zanikanie;
+    animation-duration: 3s;    
+    animation-fill-mode: forwards;
 
+}
+
+@keyframes zanikanie{
+
+0% {opacity: 1;}
+100% {opacity: 0;}
 
 }
 
@@ -173,3 +185,18 @@ div.start{
 	text-align: center;
 	margin-top: 200px;
 }
+
+.good{
+
+ position: absolute;
+ top: 150px;
+ left: 45%;
+}
+
+.bad{
+
+ position: absolute;
+ top: 150px;
+ left: 45%;
+}
+

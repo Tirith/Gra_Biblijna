@@ -1,7 +1,7 @@
 function timer(){
 
 	var poz_czas = 15;
-	var pojemnik_na_czas = $('#czas');
+	// var pojemnik_na_czas = $('#czas');
 	var button_game = $('#button_game');
 	var stoping = setInterval(function(){ countDown() }, 1000);
 
@@ -14,6 +14,7 @@ function countDown() {
 		{
 			button_game.html('Rozpocznij od nowa');
 			clearInterval(stoping);
+			disable_tiles();
 		}
 };
 	
