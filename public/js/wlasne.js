@@ -39,13 +39,15 @@ var tile = document.querySelectorAll('.odpowiedz');
             var x = document.getElementById("pop").innerHTML;
             var poprawna = parseInt(x);
 
-            function disable_tiles()
-            {
+            function disable_tiles(){
+                
                 for (var i = 1; i < 5; i++) {
                     var pre = 'l'+i.toString();
                      document.getElementById(pre).onclick = '';    
                     }
                     pojemnik_na_czas.addClass("zanikanie");
+
+
              }
 //----------------------Sprawdzanie odpowiedzi-----------------------------------
             
