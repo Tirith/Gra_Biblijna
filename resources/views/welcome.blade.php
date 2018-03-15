@@ -1,6 +1,7 @@
 <?php 
 session_start();
 $_SESSION['losuj']=1;
+$_SESSION['punkty']=0;
 
 
 ?>

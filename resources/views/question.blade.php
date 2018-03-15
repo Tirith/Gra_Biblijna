@@ -146,7 +146,7 @@
                 <div class="row">
                     <div class="col-md-12 col-lg-12">
                         
-                       <div  class="next"> <a href="{{ url('/') }}" class="next" id="button_game">Koniec</a></div>
+                       <div  class="next"> <a href="{{ url('/pytania') }}" class="next" id="button_game">Koniec</a></div>
                     </div>
                 </div >
 
