@@ -137,16 +137,22 @@
 
                 <div  class="row">
                       <hr noshade="noshade" />
-                    <div id="czas" class="col-md-12 col-lg-12 czas">
+                    <div id="czas" class="col-md-6 col-lg-6 czas">
                        Czas: 15s
+                    </div>
+
+                    <div  class="col-md-6 col-lg-6 pkt">
+                       
                     </div>
                 </div >
 
+                
+
 
                 <div class="row">
-                    <div class="col-md-12 col-lg-12">
+                    <div class="col-md-12 col-lg-12 text-center">
                         
-                       <div  class="next"> <a href="{{ url('/pytania') }}" class="next" id="button_game">Koniec</a></div>
+                       <div id="main_button"> </div>
                     </div>
                 </div >
 
@@ -161,7 +167,11 @@
         <script type="text/javascript">
             document.addEventListener('DOMContentLoaded', function() {
             timer();
+            progress();
+            pojemnik_na_pkt.html('Wynik: ' + sessionStorage.clickcount + ' pkt');
             }, false);
+
+
 
             
 

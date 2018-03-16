@@ -1,7 +1,7 @@
 <?php 
 session_start();
 $_SESSION['losuj']=1;
-$_SESSION['punkty']=0;
+
 
 
 ?>
@@ -36,14 +36,25 @@ $_SESSION['punkty']=0;
                
                <h2 class="logo">Quiz Bibliny</h2>
 
-              <div class="start"> <a href="{{ url('/pytania') }}" class="start">START</a></div>
+              <div id="start" class="start"> <a href="{{ url('/pytania') }}" class="start">START</a></div>
       
                
             </div>
         
         <script src={{ url('css/bootstrap/jquery.min.js') }} type="text/javascript"></script>
         <script src={{ url('css/bootstrap/js/bootstrap.min.js') }} type="text/javascript"></script>
-        <script src={{ url('js/wlasne.js') }} type="text/javascript"></script>
+        
+        <script type="text/javascript">
+            var start_game = $('#start');
+            //----------------------Init game-----------------------------------
+
+start_game.click(function () 
+{
+    
+    sessionStorage.clickcount = 0;
+});
+        </script>
+
         
         
     </body>

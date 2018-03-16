@@ -56,10 +56,10 @@ body{
 
 .czas{
 
-	text-align: center;
+	
+	font-size: 22px;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 45px;
-	color:#E7A14E;
+	color: #EAE7B0;
 	
 }
 
@@ -98,6 +98,15 @@ body{
 
 .pytanie_nag {
 	margin: 20px;
+	border-radius: 6px;
+	font-size: 22px;
+	font-family: 'Montserrat', sans-serif;
+	color: #EAE7B0;
+			
+}
+
+.pkt {
+	text-align: right;
 	border-radius: 6px;
 	font-size: 22px;
 	font-family: 'Montserrat', sans-serif;
