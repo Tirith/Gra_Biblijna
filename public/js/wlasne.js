@@ -10,19 +10,21 @@ var main_button = document.getElementById('main_button');
 var nast = 'Następne pytanie';
 var koniec = 'Rozpocznij od nowa';
 var tile = document.querySelectorAll('.odpowiedz');
-const good = document.createElement('span');
-const bad = document.createElement('span');
-	good.classList.add("glyphicon");
-    good.classList.add("glyphicon-ok");
-    good.classList.add("good");
-    good.style.setProperty("color", "#1C9B07");
+// const good = document.createElement('span');
+// const bad = document.createElement('span');
+// 	good.classList.add("glyphicon");
+//     good.classList.add("glyphicon-ok");
+//     good.classList.add("good");
+//     good.style.setProperty("color", "#1C9B07");
 
-    bad.classList.add("glyphicon");
-    bad.classList.add("glyphicon-remove");
-    bad.classList.add("bad");
-    bad.style.setProperty("color", "#F50B16");
+//     bad.classList.add("glyphicon");
+//     bad.classList.add("glyphicon-remove");
+//     bad.classList.add("bad");
+//     bad.style.setProperty("color", "#F50B16");
 
 var pojemnik_na_czas = $('#czas');
+var bad_color =  "#C03030";
+var good_color = "#5C9A36";
 //----------------------Create main button---------------------------
 //----------------------Gra w toku-----------------------------------
 function progress()
@@ -31,7 +33,7 @@ function progress()
 	const in_progress = document.createElement('a');
 	// in_progress.setAttribute('href', "");
 	in_progress.classList.add("next");
-	in_progress.textContent = "Gra w toku";
+	in_progress.textContent = "Podaj odpowiedź";
 	main_button.appendChild(in_progress);
 }
 
@@ -49,6 +51,7 @@ function next_quest()
 //----------------------New game-----------------------------------
 function new_game()
 {
+	sessionStorage.clickcount = 0;
 	main_button.innerHTML = "";
 	const new_game = document.createElement('a');
 	new_game.setAttribute('href', "");
@@ -64,13 +67,23 @@ function timer(){
 	var stoping = setInterval(function(){ countDown() }, 1000);
 
 	function countDown() {
-		pojemnik_na_czas.html('Czas: ' + poz_czas + 's');
+		pojemnik_na_czas.html('<span class="glyphicon glyphicon-time"> </span> ' + poz_czas + 's');
 		poz_czas--;
 	
 		if (poz_czas==-1 || czas_stop == true) 
 			{
 				clearInterval(stoping);
 				disable_tiles();
+				if (poz_czas == -1) 
+				{
+					for (var i = 1; i < 5; i++) {
+                    	var pre = 'l'+i.toString();
+                     	    
+                     	document.getElementById(pre).style.opacity = "0.5";   
+                    }
+					new_game();
+				}
+
 			}	
 	};	
 };
@@ -81,6 +94,7 @@ function timer(){
                 for (var i = 1; i < 5; i++) {
                     	var pre = 'l'+i.toString();
                      	document.getElementById(pre).onclick = '';    
+                     	 
                     }
                     pojemnik_na_czas.addClass("zanikanie");
 
@@ -108,15 +122,17 @@ function timer(){
               {
               	
                 if (poprawna==1) {
-                                 this.appendChild(good);
+                                 
+                                 this.style.backgroundColor = good_color;
                                  button_game.html(nast);
                                  score_count();
                                  next_quest()
 
 
                             } else{
+                            	this.style.backgroundColor = bad_color;
                                  score_reset()
-                                 this.appendChild(bad);
+                               
                                  new_game()
                             } 
 
@@ -127,13 +143,13 @@ function timer(){
               tile[1].onclick = function() 
               {
                 if (poprawna==2) {
-                                 	this.appendChild(good);
+                                 	this.style.backgroundColor = good_color;
                                  	button_game.html(nast);
                                  	score_count();
                                  	next_quest()
                             } else{
                                  score_reset()
-                                 this.appendChild(bad);
+                                 this.style.backgroundColor = bad_color;
                                  new_game()
                             } 
                     disable_tiles();
@@ -143,13 +159,13 @@ function timer(){
               {
                 if (poprawna==3) {
                 	 			
-                                 this.appendChild(good);
+                                 this.style.backgroundColor = good_color;
                                  button_game.html(nast);
                                  score_count();
                                  next_quest()
                             } else{
                                  score_reset()
-                                 this.appendChild(bad);
+                                 this.style.backgroundColor = bad_color;
                                  new_game()
                             } 
                     disable_tiles();
@@ -159,13 +175,13 @@ function timer(){
               {
                 if (poprawna==4) {
                 	 			 
-                                 this.appendChild(good);
+                                 this.style.backgroundColor = good_color;
                                  button_game.html(nast);
                                  score_count();
                                  next_quest()
                             } else{
                                  score_reset()
-                                 this.appendChild(bad);
+                                 this.style.backgroundColor = bad_color;
                                  new_game()
                             } 
                     disable_tiles();

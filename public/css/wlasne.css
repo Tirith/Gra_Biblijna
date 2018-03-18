@@ -13,17 +13,13 @@ body{
 	text-align: center;
 	border: 4px solid#6B5511;
 	padding: 10px;
-	background-color: #D8E0EF;
+	background-color: #D4D7BE;
 	font-size: 33px;
 	border-radius: 6px;
 	height: 200px;
-	transition: all .3s ease-in-out;
+	transition: all .6s ease-in-out;
 
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3bead+0,dfe5d7+60,fcfff4+100 */
-	background: #b3bead; /* Old browsers */
-	background: -moz-linear-gradient(-45deg, #b3bead 0%, #dfe5d7 60%, #fcfff4 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg, #b3bead 0%,#dfe5d7 60%,#fcfff4 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(135deg, #b3bead 0%,#dfe5d7 60%,#fcfff4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3bead', endColorstr='#fcfff4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -79,8 +75,8 @@ body{
 
 .pytanie {
 
-	
-	height:50px;
+	text-align: center;
+	height:90px;
 	margin-bottom: 20px;
 	border-radius: 6px;
 	font-size: 22px;
@@ -96,12 +92,20 @@ body{
 	box-shadow: 9px 10px 29px 1px rgba(0,0,0,0.67);
 }
 
-.pytanie_nag {
-	margin: 20px;
-	border-radius: 6px;
+.off {
+
 	font-size: 22px;
 	font-family: 'Montserrat', sans-serif;
 	color: #EAE7B0;
+	
+}
+
+.pytanie_nag {
+	margin-top: 20px;
+	border-radius: 6px;
+	font-size: 22px;
+	font-family: 'Montserrat', sans-serif;
+	color: #E7A14E;
 			
 }
 
@@ -166,7 +170,7 @@ a.next
 	color: #939844;
 	
 	text-decoration: none;
-	font-size: 39px;
+	font-size: 25px;
 	 box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e8c1c+0,20511f+50,1c471b+51,237b21+100 */
 	background: #1e8c1c; /* Old browsers */
@@ -198,14 +202,14 @@ div.start{
 .good{
 
  position: absolute;
- top: 150px;
+ top: 5px;
  left: 45%;
 }
 
 .bad{
 
  position: absolute;
- top: 150px;
- left: 45%;
+ top: 5px;
+ left: 80%;
 }
 

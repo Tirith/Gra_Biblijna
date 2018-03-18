@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Biblijny Quiz</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
@@ -66,6 +66,7 @@
     <body>
         <div id="pop">{{$pytanie->poprawna}}</div>
             <div class="container">
+                <a href="{{ url('/') }}"><div class="off"><span class="glyphicon glyphicon-off"></span></div></a>
 
                 <div class="row">
                     <div class="col-lg-12">
@@ -83,7 +84,7 @@
 
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 flex-center ">
-                        <span class="pytanie_nag" >Pytanie</span>
+                        <span class="pytanie_nag" >PYTANIE</span>
                     </div>
 
                 </div >
@@ -138,7 +139,7 @@
                 <div  class="row">
                       <hr noshade="noshade" />
                     <div id="czas" class="col-md-6 col-lg-6 czas">
-                       Czas: 15s
+                       <span class="glyphicon glyphicon-time"></span> 15s
                     </div>
 
                     <div  class="col-md-6 col-lg-6 pkt">
