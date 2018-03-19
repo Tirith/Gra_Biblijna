@@ -60,6 +60,9 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            #pop{
+                visibility: hidden;
+            }
         </style>
 
     </head>
@@ -136,13 +139,17 @@
                    </div>
                 </div>
 
-                <div  class="row">
-                      <hr noshade="noshade" />
-                    <div id="czas" class="col-md-6 col-lg-6 czas">
+                <div  class="row belka">
+                    <div id="czas" class="col-md-4 col-lg-4 czas">
                        <span class="glyphicon glyphicon-time"></span> 15s
                     </div>
 
-                    <div  class="col-md-6 col-lg-6 pkt">
+
+                    <div  class="col-md-4 col-lg-4 poziom">
+                       Poziom: 1
+                    </div>
+
+                    <div  class="col-md-4 col-lg-4 pkt">
                        
                     </div>
                 </div >
@@ -150,7 +157,7 @@
                 
 
 
-                <div class="row">
+                <div class="row main_button_row">
                     <div class="col-md-12 col-lg-12 text-center">
                         
                        <div id="main_button"> </div>

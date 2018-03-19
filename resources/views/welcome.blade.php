@@ -34,7 +34,7 @@ $_SESSION['losuj']=1;
             <div class="container">
 
                
-               <h2 class="logo">Quiz Biblijny</h2>
+               <h2 class="logo">Biblijny Quiz</h2>
 
               <div id="start" class="start"> <a href="{{ url('/pytania') }}" class="start">START</a></div>
       

@@ -11,7 +11,7 @@ body{
 
 .odpowiedz{
 	text-align: center;
-	border: 4px solid#6B5511;
+	border: 4px solid #6B5511;
 	padding: 10px;
 	background-color: #D4D7BE;
 	font-size: 33px;
@@ -39,6 +39,7 @@ body{
 	text-align: center;
 	border-bottom: 1px solid #28341C;
 	padding-bottom: 4px;
+	
 }
 
 
@@ -48,15 +49,22 @@ body{
 	font-family: 'Lobster', cursive;
 	font-size: 45px;
 	color:#E7A14E;
+	text-shadow: 3px 3px #000;
 }
 
 .czas{
-
-	
 	font-size: 22px;
 	font-family: 'Montserrat', sans-serif;
 	color: #EAE7B0;
 	
+}
+
+.poziom{
+	text-align: center;
+	font-size: 22px;
+	font-family: 'Montserrat', sans-serif;
+	color: #EAE7B0;
+
 }
 
 .zanikanie{
@@ -74,12 +82,12 @@ body{
 }
 
 .pytanie {
-
+	border: 2px solid #6B5511;
 	text-align: center;
 	height:90px;
 	margin-bottom: 20px;
 	border-radius: 6px;
-	font-size: 22px;
+	font-size: 28px;
 	font-family: 'Montserrat', sans-serif;
 	color: #EAE7B0;
 			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#49594b+0,526e53+50,4a644a+51,739672+100 */
@@ -167,7 +175,8 @@ a.next
 	background-color: #236d2b;
 	padding: 9px;
 	border-radius: 5px;
-	color: #939844;
+	color: #E7A14E;
+
 	
 	text-decoration: none;
 	font-size: 25px;
@@ -211,5 +220,15 @@ div.start{
  position: absolute;
  top: 5px;
  left: 80%;
+}
+
+.belka{
+	border-top: 2px solid #475731;
+	margin-top: 25px;
+	padding-top: 5px;
+}
+
+.main_button_row{
+	margin-top: 30px;
 }
 
