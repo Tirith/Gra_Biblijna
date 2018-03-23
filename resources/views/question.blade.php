@@ -1,3 +1,11 @@
+<?php
+if (!isset($pytanie))
+{
+    header('location: http://localhost/Gra_Biblijna/public/');
+    exit();
+}
+  ?>
+}
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
@@ -141,12 +149,12 @@
 
                 <div  class="row belka">
                     <div id="czas" class="col-md-4 col-lg-4 czas">
-                       <span class="glyphicon glyphicon-time"></span> 15s
+                       <span class="glyphicon glyphicon-time"></span> 
                     </div>
 
 
                     <div  class="col-md-4 col-lg-4 poziom">
-                       Poziom: 1
+                       Poziom: {{$_SESSION['poziom']}}
                     </div>
 
                     <div  class="col-md-4 col-lg-4 pkt">

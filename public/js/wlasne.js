@@ -62,7 +62,7 @@ function new_game()
 
 //----------------------Count time-----------------------------------
 function timer(){
-	var poz_czas = 15;
+	var poz_czas = 20; //Ilość czasu na odpowiedź
 	var pojemnik_na_czas = $('#czas');
 	var stoping = setInterval(function(){ countDown() }, 1000);
 

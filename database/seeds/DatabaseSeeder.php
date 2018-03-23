@@ -277,7 +277,7 @@ class DatabaseSeeder extends Seeder
                                    ]);
 
         DB::table('questions')->insert([
-                                'pytanie' => 'Jaki wiatr rozdzilił morze czerwone?',                               
+                                'pytanie' => 'Jaki wiatr rozdzielił morze czerwone?',                               
                                 'odp1' => 'Zachodni',                          
                                 'odp2' => 'Wschodni',                          
                                 'odp3' => 'Północny',                          
@@ -285,6 +285,110 @@ class DatabaseSeeder extends Seeder
                                 'poprawna' => 2,                          
                                 'trudnosc' => 5,                          
                                    ]);
+
+        DB::table('questions')->insert([
+                                'pytanie' => 'Gdzie jest napisane że "Noe chodził z prawdziwym Bogiem"?',                               
+                                'odp1' => 'Rodzaju 2:15',                          
+                                'odp2' => 'Rodzaju 6:9',                          
+                                'odp3' => 'Wyjścia 4:2',                          
+                                'odp4' => 'Jouzuego 1:1',                          
+                                'poprawna' => 2,                          
+                                'trudnosc' => 1,                          
+                                   ]);
+
+        DB::table('questions')->insert([
+                                'pytanie' => 'Jak nazywali się synowie Noego?',                               
+                                'odp1' => 'Szadrach, Meszach i Abed-Nego',                          
+                                'odp2' => 'Paweł, Mateusz, Jan',                          
+                                'odp3' => 'Sem, Cham i Jafet',                          
+                                'odp4' => 'Józef, Jakub i Ezaw',                          
+                                'poprawna' => 3,                          
+                                'trudnosc' => 1,                          
+                                   ]);
+
+        DB::table('questions')->insert([
+                                'pytanie' => 'Które zdanie jest prawdziwe?',                               
+                                'odp1' => 'Abel żył dłużej niż Kain',                          
+                                'odp2' => 'Jezus był kuszony trzy razy',                          
+                                'odp3' => 'Mojżesz w Egipcie dokonał 10 cudów',                          
+                                'odp4' => 'Estera była przybraną córką Mardocheusza',                          
+                                'poprawna' => 4,                          
+                                'trudnosc' => 3,                          
+                                   ]);
+
+        DB::table('questions')->insert([
+                                'pytanie' => 'Które zdanie jest prawdziwe?',                               
+                                'odp1' => 'Niektóre demony są w stanie zwanym Tartar',                          
+                                'odp2' => 'Jezus został sprzedany za 30 złotych monet',                          
+                                'odp3' => 'Adam został zwiedziony przez szatana',                          
+                                'odp4' => 'Arka miała około 300m długości',                          
+                                'poprawna' => 1,                          
+                                'trudnosc' => 3,                          
+                                   ]);
+
+        DB::table('questions')->insert([
+                                'pytanie' => 'Co to jest tartar?',                               
+                                'odp1' => 'Miasto w starożytnym Izraelu',                          
+                                'odp2' => 'Inaczej zawód drwala',                          
+                                'odp3' => 'Złota grecka moneta',                          
+                                'odp4' => 'Stan bytu',                          
+                                'poprawna' => 4,                          
+                                'trudnosc' => 5,                          
+                                   ]);
+
+        DB::table('questions')->insert([
+                                'pytanie' => 'Konec niewoli izraelitów był w roku?',                               
+                                'odp1' => '535 p.n.e',                          
+                                'odp2' => '537 p.n.e',                          
+                                'odp3' => '536 p.n.e',                          
+                                'odp4' => '670 p.n.e',                          
+                                'poprawna' => 2,                          
+                                'trudnosc' => 2,                          
+                                   ]);
+
+        DB::table('questions')->insert([
+                                'pytanie' => 'Gdzie zapisana jest defnicja wiary?',                               
+                                'odp1' => 'Hebr 1:1',                          
+                                'odp2' => 'Hebr 1:11',                          
+                                'odp3' => 'Hebr 11:1',                          
+                                'odp4' => 'Hebr 11:11',                          
+                                'poprawna' => 3,                          
+                                'trudnosc' => 3,                          
+                                   ]);
+
+        DB::table('questions')->insert([
+                                'pytanie' => 'Kto był pierworodnym synem Noego?',                               
+                                'odp1' => 'Sem',                          
+                                'odp2' => 'Cham',                          
+                                'odp3' => 'Jafet',                          
+                                'odp4' => 'Nie wiadomo',                          
+                                'poprawna' => 4,                          
+                                'trudnosc' => 3,                          
+                                   ]);
+
+        DB::table('questions')->insert([
+                                'pytanie' => 'Set był synem?',                               
+                                'odp1' => 'Adama i Ewy',                          
+                                'odp2' => 'Noego',                          
+                                'odp3' => 'Kaina',                          
+                                'odp4' => 'Jakuba',                          
+                                'poprawna' => 1,                          
+                                'trudnosc' => 2,                          
+                                   ]);
+
+        DB::table('questions')->insert([
+                                'pytanie' => 'Gdzie zapisana jest defnicja wiary?',                               
+                                'odp1' => 'Hebr 1:1',                          
+                                'odp2' => 'Hebr 1:11',                          
+                                'odp3' => 'Hebr 11:1',                          
+                                'odp4' => 'Hebr 11:11',                          
+                                'poprawna' => 3,                          
+                                'trudnosc' => 3,                          
+                                   ]);
+
+
+
+
 
 
     }

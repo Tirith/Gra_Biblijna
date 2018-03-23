@@ -17,7 +17,19 @@ class QuestionController extends Controller
         if (isset($_SESSION['losuj'])){
             $ile = Question::count();
             $losowe_id = rand(1, $ile);
-            $pytanie = Question::findOrFail($losowe_id);
+            
+            if ($_SESSION['poprawne_odp']==5)
+            {
+               $_SESSION['poziom']++; 
+               $_SESSION['poprawne_odp']=0;
+            }
+            if ($_SESSION['poziom']<5)
+            {
+                $_SESSION['poprawne_odp']++;
+            }
+            
+
+            $pytanie = Question::where('trudnosc', $_SESSION['poziom'])->orderByRaw('RAND()')->firstOrFail();
             $_SESSION['losuj']++;
         } else{
             $_SESSION['losuj'] = 1;    
@@ -25,7 +37,7 @@ class QuestionController extends Controller
         
         
         $ile = Question::count();
-        return view('question', array('pytanie' => $pytanie));
+        return view('question', compact('pytanie'));
     }
 
     /**

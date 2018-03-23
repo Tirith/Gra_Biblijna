@@ -1,6 +1,9 @@
 <?php 
 session_start();
-$_SESSION['losuj']=1;
+$_SESSION['losuj'] = 1;
+$_SESSION['poziom'] = 1;
+$_SESSION['poprawne_odp'] = 0;
+
 
 
 
