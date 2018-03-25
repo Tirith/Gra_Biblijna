@@ -73,6 +73,14 @@ if (!isset($pytanie))
             }
         </style>
 
+        <script type="text/javascript">
+            if (localStorage.getItem('refresh')==1)
+            {
+                location.href="http://localhost/Gra_Biblijna/public/";
+
+            }
+        </script>
+
     </head>
     <body>
         <div id="pop">{{$pytanie->poprawna}}</div>

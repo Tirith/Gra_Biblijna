@@ -17,13 +17,15 @@ class QuestionController extends Controller
         if (isset($_SESSION['losuj'])){
             $ile = Question::count();
             $losowe_id = rand(1, $ile);
+            $zmiana_poz = 5; //co ile pytań ma się zmienić poziom
+            $ilość_poz = 5; //ilosc poziomów
             
-            if ($_SESSION['poprawne_odp']==5)
+            if ($_SESSION['poprawne_odp'] == $zmiana_poz)
             {
                $_SESSION['poziom']++; 
                $_SESSION['poprawne_odp']=0;
             }
-            if ($_SESSION['poziom']<5)
+            if ($_SESSION['poziom'] < $ilość_poz)
             {
                 $_SESSION['poprawne_odp']++;
             }

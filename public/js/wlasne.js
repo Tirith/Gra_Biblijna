@@ -1,5 +1,5 @@
 //----------------------Zmienne i stałe-----------------------------------
-
+localStorage.setItem('refresh', 1); //zmienna do blokowania odswierzania strony
 var pojemnik_na_pkt = $('.pkt');
 var czas_stop = false;
 var x = document.getElementById("pop").innerHTML;
@@ -10,17 +10,6 @@ var main_button = document.getElementById('main_button');
 var nast = 'Następne pytanie';
 var koniec = 'Rozpocznij od nowa';
 var tile = document.querySelectorAll('.odpowiedz');
-// const good = document.createElement('span');
-// const bad = document.createElement('span');
-// 	good.classList.add("glyphicon");
-//     good.classList.add("glyphicon-ok");
-//     good.classList.add("good");
-//     good.style.setProperty("color", "#1C9B07");
-
-//     bad.classList.add("glyphicon");
-//     bad.classList.add("glyphicon-remove");
-//     bad.classList.add("bad");
-//     bad.style.setProperty("color", "#F50B16");
 
 var pojemnik_na_czas = $('#czas');
 var bad_color =  "#C03030";
@@ -40,6 +29,7 @@ function progress()
 //----------------------Next question-----------------------------------
 function next_quest()
 {
+	localStorage.setItem('refresh', 0);
 	main_button.innerHTML = "";
 	const next_quest = document.createElement('a');
 	next_quest.setAttribute('href', "");
@@ -54,7 +44,7 @@ function new_game()
 	sessionStorage.clickcount = 0;
 	main_button.innerHTML = "";
 	const new_game = document.createElement('a');
-	new_game.setAttribute('href', "");
+	new_game.setAttribute('href', "http://localhost/Gra_Biblijna/public/");
 	new_game.classList.add("next");
 	new_game.textContent = "Nowa gra";
 	main_button.appendChild(new_game);
@@ -76,14 +66,13 @@ function timer(){
 				disable_tiles();
 				if (poz_czas == -1) 
 				{
-					for (var i = 1; i < 5; i++) {
-                    	var pre = 'l'+i.toString();
-                     	    
+					for (var i = 1; i < 5; i++) 
+					{
+                    	var pre = 'l'+i.toString();    
                      	document.getElementById(pre).style.opacity = "0.5";   
                     }
 					new_game();
 				}
-
 			}	
 	};	
 };
@@ -91,13 +80,12 @@ function timer(){
             function disable_tiles()
             {
                 czas_stop = true;
-                for (var i = 1; i < 5; i++) {
+                for (var i = 1; i < 5; i++) 
+                	{
                     	var pre = 'l'+i.toString();
-                     	document.getElementById(pre).onclick = '';    
-                     	 
+                     	document.getElementById(pre).onclick = '';	 
                     }
                     pojemnik_na_czas.addClass("zanikanie");
-
              }
 
 //-------------------Score count-----------------------------------
@@ -121,19 +109,15 @@ function timer(){
             tile[0].onclick = function() 
               {
               	
-                if (poprawna==1) {
-                                 
-                                 this.style.backgroundColor = good_color;
-                                 button_game.html(nast);
-                                 score_count();
-                                 next_quest()
-
-
+                if (poprawna==1) { 
+	                                 this.style.backgroundColor = good_color;
+	                                 button_game.html(nast);
+	                                 score_count();
+	                                 next_quest()
                             } else{
-                            	this.style.backgroundColor = bad_color;
-                                 score_reset()
-                               
-                                 new_game()
+	                            	 this.style.backgroundColor = bad_color;
+	                                 score_reset();
+	                                 new_game();
                             } 
 
                     disable_tiles(); 
@@ -146,11 +130,11 @@ function timer(){
                                  	this.style.backgroundColor = good_color;
                                  	button_game.html(nast);
                                  	score_count();
-                                 	next_quest()
+                                 	next_quest();
                             } else{
-                                 score_reset()
-                                 this.style.backgroundColor = bad_color;
-                                 new_game()
+	                                 score_reset();
+	                                 this.style.backgroundColor = bad_color;
+	                                 new_game();
                             } 
                     disable_tiles();
               }
@@ -158,15 +142,14 @@ function timer(){
               tile[2].onclick = function() 
               {
                 if (poprawna==3) {
-                	 			
-                                 this.style.backgroundColor = good_color;
-                                 button_game.html(nast);
-                                 score_count();
-                                 next_quest()
+	                                 this.style.backgroundColor = good_color;
+	                                 button_game.html(nast);
+	                                 score_count();
+	                                 next_quest();
                             } else{
-                                 score_reset()
-                                 this.style.backgroundColor = bad_color;
-                                 new_game()
+	                                 score_reset()
+	                                 this.style.backgroundColor = bad_color;
+	                                 new_game();
                             } 
                     disable_tiles();
               }
@@ -174,15 +157,14 @@ function timer(){
               tile[3].onclick = function() 
               {
                 if (poprawna==4) {
-                	 			 
-                                 this.style.backgroundColor = good_color;
-                                 button_game.html(nast);
-                                 score_count();
-                                 next_quest()
+	                                 this.style.backgroundColor = good_color;
+	                                 button_game.html(nast);
+	                                 score_count();
+	                                 next_quest();
                             } else{
-                                 score_reset()
-                                 this.style.backgroundColor = bad_color;
-                                 new_game()
+	                                 score_reset();
+	                                 this.style.backgroundColor = bad_color;
+	                                 new_game();
                             } 
                     disable_tiles();
               }

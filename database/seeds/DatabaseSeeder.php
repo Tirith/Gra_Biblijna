@@ -173,7 +173,7 @@ class DatabaseSeeder extends Seeder
                                 'odp3' => 'Dawid',                          
                                 'odp4' => 'Salomon',                          
                                 'poprawna' => 2,                          
-                                'trudnosc' => 4,                          
+                                'trudnosc' => 3,                          
                                    ]);
 
         DB::table('questions')->insert([
@@ -240,7 +240,7 @@ class DatabaseSeeder extends Seeder
                                 'pytanie' => 'Kto pomógł zwiadowcom w Jerychu?',                               
                                 'odp1' => 'Rachab',                          
                                 'odp2' => 'Jonasz',                          
-                                'odp3' => 'Abracham',                          
+                                'odp3' => 'Abraham',                          
                                 'odp4' => 'Nikt im nie pomógł',                          
                                 'poprawna' => 1,                          
                                 'trudnosc' => 1,                          
@@ -385,6 +385,105 @@ class DatabaseSeeder extends Seeder
                                 'poprawna' => 3,                          
                                 'trudnosc' => 3,                          
                                    ]);
+
+         DB::table('questions')->insert([
+                                'pytanie' => 'Co oznacza słowo "Babel"?',                               
+                                'odp1' => 'Wieża',                          
+                                'odp2' => 'Miasto',                          
+                                'odp3' => 'Zamieszanie',                          
+                                'odp4' => 'Rozproszenie',                          
+                                'poprawna' => 3,                          
+                                'trudnosc' => 3,                          
+                                   ]);
+
+          DB::table('questions')->insert([
+                                'pytanie' => 'Kto został nazwany "Przyjacielem Jehowy"?',                               
+                                'odp1' => 'Abraham',                          
+                                'odp2' => 'Noe',                          
+                                'odp3' => 'Izajasz',                          
+                                'odp4' => 'Jan',                          
+                                'poprawna' => 1,                          
+                                'trudnosc' => 1,                          
+                                   ]);
+
+           DB::table('questions')->insert([
+                                'pytanie' => 'Dawid był?',                               
+                                'odp1' => 'Ojcem Saula',                          
+                                'odp2' => 'Wodzem Armii',                          
+                                'odp3' => 'Prorokiem',                          
+                                'odp4' => 'Pierwszym królem Izraela',                          
+                                'poprawna' => 2,                          
+                                'trudnosc' => 2,                          
+                                   ]);
+
+            DB::table('questions')->insert([
+                                'pytanie' => 'Kto był przyjacielem Dawida?',                               
+                                'odp1' => 'Saul',                          
+                                'odp2' => 'Mefiboszet',                          
+                                'odp3' => 'Uriasz',                          
+                                'odp4' => 'Jonatan',                          
+                                'poprawna' => 4,                          
+                                'trudnosc' => 1,                          
+                                   ]);
+
+             DB::table('questions')->insert([
+                                'pytanie' => 'Podczas panowania jakiego króla Izrael został podzielony?',                               
+                                'odp1' => 'Salomon',                          
+                                'odp2' => 'Dawid',                          
+                                'odp3' => 'Saul',                          
+                                'odp4' => 'Jeroboam',                          
+                                'poprawna' => 1,                          
+                                'trudnosc' => 4,                          
+                                   ]);
+
+              DB::table('questions')->insert([
+                                'pytanie' => 'Jak poprawnie brzmi imie dowódcy wojsk Syrii?',                               
+                                'odp1' => 'Naaman',                          
+                                'odp2' => 'Namaan',                          
+                                'odp3' => 'Namman',                          
+                                'odp4' => 'Namann',                          
+                                'poprawna' => 1,                          
+                                'trudnosc' => 3,                          
+                                   ]);
+
+               DB::table('questions')->insert([
+                                'pytanie' => 'Kto ujżał ogniste rydwany Jehowy?',                               
+                                'odp1' => 'Eliasz',                          
+                                'odp2' => 'Elizeusz',                          
+                                'odp3' => 'Jeroboam',                          
+                                'odp4' => 'Jechoszafat',                          
+                                'poprawna' => 2,                          
+                                'trudnosc' => 3,                          
+                                   ]);
+
+                DB::table('questions')->insert([
+                                'pytanie' => 'Kim była Atalia?',                               
+                                'odp1' => 'Córką Jezebel',                          
+                                'odp2' => 'Siostrą Jezebel',                          
+                                'odp3' => 'Matką Jezebel',                          
+                                'odp4' => 'Służącą Jezebel',                          
+                                'poprawna' => 1,                          
+                                'trudnosc' => 5,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Po przyjściu do Niniwy Jonasz powiedział mieszkańcom?',                               
+                                'odp1' => 'Jehowa postanowił was oszczędzić',                          
+                                'odp2' => 'Jonasz nie był w Niniwie',                          
+                                'odp3' => 'Niniwa zostanie zniszczona za 40 dni',                          
+                                'odp4' => 'Jehowa sprowadzi na was klęskę głodu',                          
+                                'poprawna' => 3,                          
+                                'trudnosc' => 3,                          
+                                   ]);
+
+
+
+
+
+
+
+
+
 
 
 

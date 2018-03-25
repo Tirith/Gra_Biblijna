@@ -3,10 +3,6 @@ session_start();
 $_SESSION['losuj'] = 1;
 $_SESSION['poziom'] = 1;
 $_SESSION['poprawne_odp'] = 0;
-
-
-
-
 ?>
 
 <!doctype html>
@@ -31,17 +27,16 @@ $_SESSION['poprawne_odp'] = 0;
 
         </style>
 
+        <script type="text/javascript">    
+            localStorage.setItem('refresh', 0);
+        </script>
+
     </head>
     <body>
         
-            <div class="container">
-
-               
+            <div class="container"> 
                <h2 class="logo">Biblijny Quiz</h2>
-
-              <div id="start" class="start"> <a href="{{ url('/pytania') }}" class="start">START</a></div>
-      
-               
+              <div id="start" class="start"> <a href="{{ url('/pytania') }}" class="start">START</a></div>   
             </div>
         
         <script src={{ url('css/bootstrap/jquery.min.js') }} type="text/javascript"></script>
