@@ -3,6 +3,8 @@ localStorage.setItem('refresh', 1); //zmienna do blokowania odswierzania strony
 var pojemnik_na_pkt = $('.pkt');
 var czas_stop = false;
 var x = document.getElementById("pop").innerHTML;
+var zapis = document.getElementById("zapis");
+var score = document.getElementById("score");
 var poprawna = parseInt(x);
 var button_game = $('#button_game');
 var main_button = document.getElementById('main_button');
@@ -14,6 +16,15 @@ var tile = document.querySelectorAll('.odpowiedz');
 var pojemnik_na_czas = $('#czas');
 var bad_color =  "#C03030";
 var good_color = "#5C9A36";
+var wynik = 0;
+
+
+function zapis_button()
+{
+	zapis.style.visibility = "visible";
+	score.value = wynik;
+
+}
 //----------------------Create main button---------------------------
 //----------------------Gra w toku-----------------------------------
 function progress()
@@ -41,6 +52,8 @@ function next_quest()
 //----------------------New game-----------------------------------
 function new_game()
 {
+	wynik = sessionStorage.clickcount;
+	
 	sessionStorage.clickcount = 0;
 	main_button.innerHTML = "";
 	const new_game = document.createElement('a');
@@ -48,6 +61,7 @@ function new_game()
 	new_game.classList.add("next");
 	new_game.textContent = "Nowa gra";
 	main_button.appendChild(new_game);
+	
 }
 
 //----------------------Count time-----------------------------------
@@ -62,12 +76,15 @@ function timer(){
 	
 		if (poz_czas==-1 || czas_stop == true) 
 			{
+
 				clearInterval(stoping);
 				disable_tiles();
 				if (poz_czas == -1) 
 				{
 					for (var i = 1; i < 5; i++) 
 					{
+						wynik = sessionStorage.clickcount;
+             	zapis_button();
                     	var pre = 'l'+i.toString();    
                      	document.getElementById(pre).style.opacity = "0.5";   
                     }
@@ -85,6 +102,8 @@ function timer(){
                     	var pre = 'l'+i.toString();
                      	document.getElementById(pre).onclick = '';	 
                     }
+
+
                     pojemnik_na_czas.addClass("zanikanie");
              }
 
@@ -96,12 +115,19 @@ function timer(){
 								    sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
 								} else {
 								    sessionStorage.clickcount = 0;
+								    disable_tiles();
+								    new_game();
 								}
 								pojemnik_na_pkt.html('Wynik: ' + sessionStorage.clickcount + ' pkt');
+								
+
              }
 //-------------------Reset score-----------------------------------
              function score_reset() 
              {
+             	wynik = sessionStorage.clickcount;
+             	zapis_button();
+             	console.log('1'+wynik);
 				sessionStorage.clickcount = 0;					
              }
 //----------------------Sprawdzanie odpowiedzi-----------------------------------

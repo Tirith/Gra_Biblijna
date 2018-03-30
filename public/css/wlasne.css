@@ -101,7 +101,7 @@ body{
 }
 
 .off {
-
+	display: inline-block;
 	font-size: 22px;
 	font-family: 'Montserrat', sans-serif;
 	color: #EAE7B0;
@@ -116,6 +116,46 @@ body{
 	color: #E7A14E;
 	text-shadow: 3px 3px #000;
 			
+}
+
+.wyniki{
+	width: 350px;
+	border: 1px solid #E7A14E;
+	border-radius: 6px;
+	font-size: 26px;
+	font-family: 'Montserrat', sans-serif;
+	color: #E7A14E;
+	text-shadow: 3px 3px #000;
+
+}
+
+div.wyniki div:nth-child(1){
+	font-size: 25px;
+}
+
+div.wyniki div:nth-child(2){
+	font-size: 22px;
+}
+
+div.wyniki div:nth-child(3){
+	font-size: 19px;
+}
+
+div.wyniki div:nth-child(4){
+	font-size: 17px;
+}
+
+div.wyniki div:nth-child(5){
+	font-size: 15px;
+}
+
+.wyniki_nag{
+	width: 350px;
+	margin-top: 20px;
+	font-size: 18px;
+	font-family: 'Montserrat', sans-serif;
+	color: #E7A14E;
+	text-shadow: 3px 3px #000;
 }
 
 .pkt {
@@ -231,5 +271,19 @@ div.start{
 
 .main_button_row{
 	margin-top: 30px;
+}
+
+.form_nick
+{
+	background-color: #475731;
+	width: 300px;
+	padding: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 120px;
+	border-radius: 5px;
+	-webkit-box-shadow: 5px 7px 20px 0px rgba(0,0,0,1);
+	-moz-box-shadow: 5px 7px 20px 0px rgba(0,0,0,1);
+	box-shadow: 5px 7px 20px 0px rgba(0,0,0,1);
 }
 

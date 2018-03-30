@@ -19,3 +19,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('/pytania', 'QuestionController');
+Route::resource('/winners', 'WinnersController');

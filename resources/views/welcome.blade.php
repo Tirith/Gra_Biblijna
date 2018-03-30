@@ -28,7 +28,7 @@ $_SESSION['poprawne_odp'] = 0;
         </style>
 
         <script type="text/javascript">    
-            localStorage.setItem('refresh', 0);
+            //localStorage.setItem('refresh', 0);
         </script>
 
     </head>
@@ -36,7 +36,22 @@ $_SESSION['poprawne_odp'] = 0;
         
             <div class="container"> 
                <h2 class="logo">Biblijny Quiz</h2>
-              <div id="start" class="start"> <a href="{{ url('/pytania') }}" class="start">START</a></div>   
+               <div class="name text-center">
+                   <form id="start" action="{{ url('/pytania') }}" class="form_nick" enctype="multipart/form-data">
+                     {{csrf_field()}}
+                     {{method_field('GET')}}
+                      <div class="form-group">
+                        
+                        <input type="text" class="form-control " name="nick" value="{{$_SESSION['nick']}}" placeholder="Twój nick">
+                        
+                      </div>
+                      
+                      <button type="submit" class="btn btn-success  btn-lg">START</button>
+                    </form>
+
+
+               </div>
+              
             </div>
         
         <script src={{ url('css/bootstrap/jquery.min.js') }} type="text/javascript"></script>
@@ -47,8 +62,8 @@ $_SESSION['poprawne_odp'] = 0;
             //----------------------Init game-----------------------------------
 
 start_game.click(function () 
-{
-    
+{ 
+    localStorage.setItem('refresh', 0);
     sessionStorage.clickcount = 0;
 });
         </script>

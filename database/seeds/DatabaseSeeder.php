@@ -16,6 +16,33 @@ class DatabaseSeeder extends Seeder
 								'email' => 'boructomek@gmail.com',							
 								'password' => bcrypt('pass'),	]);
 
+        DB::table('winners')->insert([
+                                'nick' => 'Tirith',                               
+                                'pkt' => 4,                          
+                                  ]);
+
+        DB::table('winners')->insert([
+                                'nick' => 'Unknown',                               
+                                'pkt' => 3,                          
+                                  ]);
+        DB::table('winners')->insert([
+                                'nick' => 'Anonim',                               
+                                'pkt' => 3,                          
+                                  ]);
+        DB::table('winners')->insert([
+                                'nick' => 'Lorem',                               
+                                'pkt' => 3,                          
+                                  ]);
+        DB::table('winners')->insert([
+                                'nick' => 'Foo',                               
+                                'pkt' => 2,                          
+                                  ]);
+        DB::table('winners')->insert([
+                                'nick' => 'Bar',                               
+                                'pkt' => 1,                          
+                                  ]);
+
+
         DB::table('questions')->insert([
                                 'pytanie' => 'Kto zbudował arkę?',                               
                                 'odp1' => 'Mojżesz',                          
@@ -475,6 +502,17 @@ class DatabaseSeeder extends Seeder
                                 'poprawna' => 3,                          
                                 'trudnosc' => 3,                          
                                    ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Ile talentów otrzymali słudzy z przypowiści Jezusa?',                               
+                                'odp1' => '1, 2, 3',                          
+                                'odp2' => '1, 2, 4',                          
+                                'odp3' => '1, 4, 6',                          
+                                'odp4' => '1, 2, 5',                          
+                                'poprawna' => 3,                          
+                                'trudnosc' => 4,                          
+                                   ]);
+                 
 
 
 

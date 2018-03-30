@@ -1,12 +1,17 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Question;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Input;
+use App\Winner;
+
 session_start();
-class QuestionController extends Controller
+
+
+class WinnersController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      *
@@ -20,33 +25,8 @@ class QuestionController extends Controller
                 ->get();
                 
 
-                $_SESSION['nick'] = $_GET['nick'];
-        if (isset($_SESSION['losuj'])){
-            $ile = Question::count();
-            $losowe_id = rand(1, $ile);
-            $zmiana_poz = 5; //co ile pytań ma się zmienić poziom
-            $ilość_poz = 5; //ilosc poziomów
-            
-            if ($_SESSION['poprawne_odp'] == $zmiana_poz)
-            {
-               $_SESSION['poziom']++; 
-               $_SESSION['poprawne_odp']=0;
-            }
-            if ($_SESSION['poziom'] < $ilość_poz)
-            {
-                $_SESSION['poprawne_odp']++;
-            }
-            
-
-            $pytanie = Question::where('trudnosc', $_SESSION['poziom'])->orderByRaw('RAND()')->firstOrFail();
-            $_SESSION['losuj']++;
-        } else{
-            $_SESSION['losuj'] = 1;    
-        }
-        
-        
-        $ile = Question::count();
-        return view('question', compact(['pytanie', 'winners']));
+                return view('question', compact('winners'));
+                
     }
 
     /**
@@ -78,7 +58,7 @@ class QuestionController extends Controller
      */
     public function show($id)
     {
-        //return view('question', array('id' => $id));
+        //
     }
 
     /**
@@ -101,7 +81,12 @@ class QuestionController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+       $winners = new Winner;
+        $winners->nick = $_SESSION['nick'];
+        $winners->pkt = Input::get('invisible');;
+        $winners->save();
+
+        return back();
     }
 
     /**

@@ -3,9 +3,10 @@ if (!isset($pytanie))
 {
     header('location: http://localhost/Gra_Biblijna/public/');
     exit();
-}
+} else 
+
   ?>
-}
+
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
@@ -71,9 +72,14 @@ if (!isset($pytanie))
             #pop{
                 visibility: hidden;
             }
+
+            #zapis{
+                visibility: hidden;
+            }
         </style>
 
         <script type="text/javascript">
+             
             if (localStorage.getItem('refresh')==1)
             {
                 location.href="http://localhost/Gra_Biblijna/public/";
@@ -85,7 +91,7 @@ if (!isset($pytanie))
     <body>
         <div id="pop">{{$pytanie->poprawna}}</div>
             <div class="container">
-                <a href="{{ url('/') }}"><div class="off"><span class="glyphicon glyphicon-off"></span></div></a>
+                <a href="{{ url('/') }}"><div class="off"><span class="glyphicon glyphicon-off"></span> </div></a> <div class="off">  {{$_SESSION['nick']}}</div>
 
                 <div class="row">
                     <div class="col-lg-12">
@@ -97,7 +103,7 @@ if (!isset($pytanie))
 
                 <div class="row">
                     <div class="col-md-12 col-lg-12 logo">
-                       Biblijny Quiz
+                       Biblijny Quiz 
                     </div>
                 </div >
 
@@ -166,8 +172,22 @@ if (!isset($pytanie))
                     </div>
 
                     <div  class="col-md-4 col-lg-4 pkt">
+
                        
                     </div>
+                <div class="name text-center">
+                   <form id="start" action="{{ url('/winners/1') }}" method="post" class="" enctype="multipart/form-data">
+                     {{csrf_field()}}
+                     {{method_field('PATCH')}}
+                      <div class="form-group">
+                        
+                        <input id="score" name="invisible" type="hidden" value="secret">
+                        
+                      </div>
+                      <button id="zapis" type="submit" class="btn btn-warning pull-right">Zapisz wynik</button>
+                    </form>
+               </div>
+
                 </div >
 
                 
@@ -177,6 +197,17 @@ if (!isset($pytanie))
                     <div class="col-md-12 col-lg-12 text-center">
                         
                        <div id="main_button"> </div>
+                    </div>
+                </div >
+
+                <div class="row main_button_row">
+                    <h3 class="wyniki_nag text-center">Najlepsze wyniki</h3>
+                    <div class="col-md-12 col-lg-12 text-center wyniki">
+                       
+                        @foreach ($winners as $winner_list)
+                           <div> {{ $winner_list->nick }} - {{ $winner_list->pkt }} </div>
+                        @endforeach
+                      
                     </div>
                 </div >
 
@@ -193,6 +224,7 @@ if (!isset($pytanie))
             timer();
             progress();
             pojemnik_na_pkt.html('Wynik: ' + sessionStorage.clickcount + ' pkt');
+
             }, false);
 
 
