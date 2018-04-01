@@ -14,13 +14,12 @@ class QuestionController extends Controller
      */
     public function index()
     {
+        $_SESSION['nick'] = $_GET['nick'];
         $winners = DB::table('winners')
                 ->limit(5)
                 ->orderBy('pkt', 'desc')
                 ->get();
                 
-
-                $_SESSION['nick'] = $_GET['nick'];
         if (isset($_SESSION['losuj'])){
             $ile = Question::count();
             $losowe_id = rand(1, $ile);

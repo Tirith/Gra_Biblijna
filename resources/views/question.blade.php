@@ -209,11 +209,7 @@ if (!isset($pytanie))
                         @endforeach
                       
                     </div>
-                </div >
-
-               
-
-                
+                </div >  
             </div>
         
         <script src={{ url('css/bootstrap/jquery.min.js') }} type="text/javascript"></script>
@@ -224,19 +220,7 @@ if (!isset($pytanie))
             timer();
             progress();
             pojemnik_na_pkt.html('Wynik: ' + sessionStorage.clickcount + ' pkt');
-
-            }, false);
-
-
-
-            
-
-
-
-
-            
-               
-                
+            }, false);       
         </script>
         
         

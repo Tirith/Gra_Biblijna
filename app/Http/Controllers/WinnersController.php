@@ -23,10 +23,7 @@ class WinnersController extends Controller
                 ->limit(5)
                 ->orderBy('pkt', 'desc')
                 ->get();
-                
-
-                return view('question', compact('winners'));
-                
+                return view('question', compact('winners'));           
     }
 
     /**
@@ -85,7 +82,6 @@ class WinnersController extends Controller
         $winners->nick = $_SESSION['nick'];
         $winners->pkt = Input::get('invisible');;
         $winners->save();
-
         return back();
     }
 

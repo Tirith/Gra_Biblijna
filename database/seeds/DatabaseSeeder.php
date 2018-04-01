@@ -21,26 +21,6 @@ class DatabaseSeeder extends Seeder
                                 'pkt' => 4,                          
                                   ]);
 
-        DB::table('winners')->insert([
-                                'nick' => 'Unknown',                               
-                                'pkt' => 3,                          
-                                  ]);
-        DB::table('winners')->insert([
-                                'nick' => 'Anonim',                               
-                                'pkt' => 3,                          
-                                  ]);
-        DB::table('winners')->insert([
-                                'nick' => 'Lorem',                               
-                                'pkt' => 3,                          
-                                  ]);
-        DB::table('winners')->insert([
-                                'nick' => 'Foo',                               
-                                'pkt' => 2,                          
-                                  ]);
-        DB::table('winners')->insert([
-                                'nick' => 'Bar',                               
-                                'pkt' => 1,                          
-                                  ]);
 
 
         DB::table('questions')->insert([
@@ -364,7 +344,7 @@ class DatabaseSeeder extends Seeder
                                    ]);
 
         DB::table('questions')->insert([
-                                'pytanie' => 'Konec niewoli izraelitów był w roku?',                               
+                                'pytanie' => 'Koniec niewoli izraelitów był w roku?',                               
                                 'odp1' => '535 p.n.e',                          
                                 'odp2' => '537 p.n.e',                          
                                 'odp3' => '536 p.n.e',                          
@@ -403,15 +383,7 @@ class DatabaseSeeder extends Seeder
                                 'trudnosc' => 2,                          
                                    ]);
 
-        DB::table('questions')->insert([
-                                'pytanie' => 'Gdzie zapisana jest defnicja wiary?',                               
-                                'odp1' => 'Hebr 1:1',                          
-                                'odp2' => 'Hebr 1:11',                          
-                                'odp3' => 'Hebr 11:1',                          
-                                'odp4' => 'Hebr 11:11',                          
-                                'poprawna' => 3,                          
-                                'trudnosc' => 3,                          
-                                   ]);
+      
 
          DB::table('questions')->insert([
                                 'pytanie' => 'Co oznacza słowo "Babel"?',                               
@@ -512,7 +484,298 @@ class DatabaseSeeder extends Seeder
                                 'poprawna' => 3,                          
                                 'trudnosc' => 4,                          
                                    ]);
-                 
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Czyim ojcem jest diabeł?',                               
+                                'odp1' => 'Kłamstwa',                          
+                                'odp2' => 'Pieniędzy',                          
+                                'odp3' => 'Kradzieży',                          
+                                'odp4' => 'Śmierci',                          
+                                'poprawna' => 1,                          
+                                'trudnosc' => 2,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Co przedstawiało królestwo Nebukadnecara w jego śnie?',                               
+                                'odp1' => 'Wielka góra',                          
+                                'odp2' => 'Wielkie drzewo',                          
+                                'odp3' => 'Wielka rzeka',                          
+                                'odp4' => 'Wielka ryba',                          
+                                'poprawna' => 2,                          
+                                'trudnosc' => 1,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Który król babilonu zobaczył pismo na ścianie?',                               
+                                'odp1' => 'Artakserkses',                          
+                                'odp2' => 'Nebukadnecar',                          
+                                'odp3' => 'Baltazar',                          
+                                'odp4' => 'Kserkses',                          
+                                'poprawna' => 3,                          
+                                'trudnosc' => 4,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Co oznaczały słowa na ścianie "MENE, MENE, TEKEL, PARSN"?',                               
+                                'odp1' => 'Medowie i Persowie podbiją Babilon',                          
+                                'odp2' => 'Ty królu stracisz życie',                          
+                                'odp3' => 'Twoje królesto będzie istnieć bardzo długo',                          
+                                'odp4' => 'Ty królu będzisz niezwyciężonym wodzem',                          
+                                'poprawna' => 1,                          
+                                'trudnosc' => 2,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Który król ogłosił postanowienie o odbudowie Jerozolimy?',                               
+                                'odp1' => 'Dariusz I',                          
+                                'odp2' => 'Kambyzes',                          
+                                'odp3' => 'Cyrus',                          
+                                'odp4' => 'Achaszwerosz',                          
+                                'poprawna' => 3,                          
+                                'trudnosc' => 3,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Ile aniołów zobaczyli pasterze zaraz po nardzonach Jezusa?',                               
+                                'odp1' => '1',                          
+                                'odp2' => '2',                          
+                                'odp3' => '12',                          
+                                'odp4' => 'Bardzo dużo',                          
+                                'poprawna' => 4,                          
+                                'trudnosc' => 2,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'W jakiej porze roku urodził się Jezus?',                               
+                                'odp1' => 'Wiosna',                          
+                                'odp2' => 'Lato',                          
+                                'odp3' => 'Jesień',                          
+                                'odp4' => 'Zima',                          
+                                'poprawna' => 3,                          
+                                'trudnosc' => 1,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Kto ochrzcił Jezusa?',                               
+                                'odp1' => 'Mateusz',                          
+                                'odp2' => 'Marek',                          
+                                'odp3' => 'Łukasz',                          
+                                'odp4' => 'Jan',                          
+                                'poprawna' => 4,                          
+                                'trudnosc' => 1,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Czyją córką była Dina?',                               
+                                'odp1' => 'Jakuba',                          
+                                'odp2' => 'Labana',                          
+                                'odp3' => 'Hioba',                          
+                                'odp4' => 'Mojżesza',                          
+                                'poprawna' => 1,                          
+                                'trudnosc' => 5,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Kto jako pierwszy został powołany na apostołów?',                               
+                                'odp1' => 'Łukasz i Mateusz',                          
+                                'odp2' => 'Piotr i Andrzej',                          
+                                'odp3' => 'Jan i Marek',                          
+                                'odp4' => 'Judasz i Szymon',                          
+                                'poprawna' => 2,                          
+                                'trudnosc' => 3,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Ile osób Jezus nakramił pięcioma chlebami i dwoma rybami??',                               
+                                'odp1' => '120',                          
+                                'odp2' => 'około 100',                          
+                                'odp3' => 'około 500',                          
+                                'odp4' => 'około 5000',                          
+                                'poprawna' => 4,                          
+                                'trudnosc' => 1,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Mateusz był...?',                               
+                                'odp1' => 'Rybakiem',                          
+                                'odp2' => 'Lekarzem',                          
+                                'odp3' => 'Poborcą podatków',                          
+                                'odp4' => 'Krawcem',                          
+                                'poprawna' => 3,                          
+                                'trudnosc' => 2,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Jaką część owocu ducha symbolizuje tarcza?',                               
+                                'odp1' => 'Miłość',                          
+                                'odp2' => 'Wiara',                          
+                                'odp3' => 'Dobroć',                          
+                                'odp4' => 'Radość',                          
+                                'poprawna' => 2,                          
+                                'trudnosc' => 2,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Która ewangelia została napisana przez lekarza?',                               
+                                'odp1' => 'Mateusza',                          
+                                'odp2' => 'Marka',                          
+                                'odp3' => 'Łuaksza',                          
+                                'odp4' => 'Jana',                          
+                                'poprawna' => 3,                          
+                                'trudnosc' => 2,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Ile apostołów miał Jezus',                               
+                                'odp1' => '2',                          
+                                'odp2' => '6',                          
+                                'odp3' => '12',                          
+                                'odp4' => '24',                          
+                                'poprawna' => 3,                          
+                                'trudnosc' => 1,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Czym Jezus nakarmił 5000 ludzi?',                               
+                                'odp1' => 'Chleby i ryby',                          
+                                'odp2' => 'Chleby i figi',                          
+                                'odp3' => 'Ryby i warzywa',                          
+                                'odp4' => 'Owoce i warzywa',                          
+                                'poprawna' => 1,                          
+                                'trudnosc' => 1,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Co Jezus zrobił dla Łazarza?',                               
+                                'odp1' => 'Dał mu pieniądze',                          
+                                'odp2' => 'Pomógł mu przy budowie domu',                          
+                                'odp3' => 'Wskrzesił go z martwych',                          
+                                'odp4' => 'Uzdrowił go',                          
+                                'poprawna' => 3,                          
+                                'trudnosc' => 1,                          
+                                   ]);
+
+                
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Jakiego zawodu Jezus nauczył się od Józefa?',                               
+                                'odp1' => 'Drwal',                          
+                                'odp2' => 'Lekarz',                          
+                                'odp3' => 'Rolnik',                          
+                                'odp4' => 'Cieśla',                          
+                                'poprawna' => 4,                          
+                                'trudnosc' => 1,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Kto chciał zabić Jezusa gdy był dzieckiem?',                               
+                                'odp1' => 'Herod',                          
+                                'odp2' => 'Piłat',                          
+                                'odp3' => 'Faraon',                          
+                                'odp4' => 'Cezar',                          
+                                'poprawna' => 1,                          
+                                'trudnosc' => 2,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'W którym dniu stworzenia został uczyniony człowiek?',                               
+                                'odp1' => 'Drugim',                          
+                                'odp2' => 'Trzecim',                          
+                                'odp3' => 'Piątym',                          
+                                'odp4' => 'Szóstym',                          
+                                'poprawna' => 4,                          
+                                'trudnosc' => 1,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'W jakim języku został spisany tzw. Stary Testament?',                               
+                                'odp1' => 'Hebrajskim',                          
+                                'odp2' => 'Greckim',                          
+                                'odp3' => 'Łacińskim',                          
+                                'odp4' => 'Egipskim',                          
+                                'poprawna' => 1,                          
+                                'trudnosc' => 1,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Kim był Jakub dla Abrahama?',                               
+                                'odp1' => 'Synem',                          
+                                'odp2' => 'Ojcem',                          
+                                'odp3' => 'Wnuczkiem',                          
+                                'odp4' => 'Zięciem',                          
+                                'poprawna' => 3,                          
+                                'trudnosc' => 2,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Które plemie izraela nie otrzymało swojej ziemi?',                               
+                                'odp1' => 'Beniamina',                          
+                                'odp2' => 'Lewiego',                          
+                                'odp3' => 'Judy',                          
+                                'odp4' => 'Rubena',                          
+                                'poprawna' => 2,                          
+                                'trudnosc' => 3,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Jakiego ptaka Mojżesz najpierw wypuścił z arki?',                               
+                                'odp1' => 'Gołąb',                          
+                                'odp2' => 'Papuga',                          
+                                'odp3' => 'Wróbel',                          
+                                'odp4' => 'Kruk',                          
+                                'poprawna' => 4,                          
+                                'trudnosc' => 2,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Jaki kolor miał sznur spuszczony przez Rachab?',                               
+                                'odp1' => 'Zelony',                          
+                                'odp2' => 'Czerwony',                          
+                                'odp3' => 'Czarny',                          
+                                'odp4' => 'Brązowy',                          
+                                'poprawna' => 2,                          
+                                'trudnosc' => 2,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Co zrobili Józefowi jego bracia?',                               
+                                'odp1' => 'Zabili',                          
+                                'odp2' => 'Pobili',                          
+                                'odp3' => 'Sprzedali do niewoli',                          
+                                'odp4' => 'Wtrącili do więzienia',                          
+                                'poprawna' => 3,                          
+                                'trudnosc' => 1,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Dlaczego Kain zabił Abla?',                               
+                                'odp1' => 'Abel nie oddał mu pieniędzy',                          
+                                'odp2' => 'Abel ukradł mu coś wartościowego',                          
+                                'odp3' => 'Kain zrobił to nieumyślnie',                          
+                                'odp4' => 'Kain był zazdrosny',                          
+                                'poprawna' => 4,                          
+                                'trudnosc' => 1,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Przed jaką katastrofą Józef uratował Egipt?',                               
+                                'odp1' => 'Klęska głodu',                          
+                                'odp2' => 'Powódź',                          
+                                'odp3' => 'Najazd wrogów',                          
+                                'odp4' => 'Zamordowanie Faraona',                          
+                                'poprawna' => 1,                          
+                                'trudnosc' => 2,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Jak nazywała się żona Abrahama?',                               
+                                'odp1' => 'Estera',                          
+                                'odp2' => 'Sara',                          
+                                'odp3' => 'Noemi',                          
+                                'odp4' => 'Rut',                          
+                                'poprawna' => 2,                          
+                                'trudnosc' => 1,                          
+                                   ]);
 
 
 
@@ -521,11 +784,7 @@ class DatabaseSeeder extends Seeder
 
 
 
-
-
-
-
-
+                
 
 
     }
