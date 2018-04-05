@@ -39,9 +39,12 @@ if (!isset($_SESSION['nick']))
     </head>
     <body>
         
-            <div class="container"> 
+            <div class="container "> 
                <h2 class="logo">Biblijny Quiz</h2>
-               <div class="name text-center">
+               
+
+
+               <div class="col-md-12 col-lg-12 name text-center">
                    <form id="start" action="{{ url('/pytania') }}" class="form_nick" enctype="multipart/form-data">
                      {{csrf_field()}}
                      {{method_field('GET')}}
@@ -56,6 +59,15 @@ if (!isset($_SESSION['nick']))
 
 
                </div>
+
+               <div class="col-md-12 col-lg-12 zasady">   
+                        <h4 class="text-center">Zasady</h4>
+                        <br>1. Po pięciu poprawnych odpowiedziach zwiększa się poziom trudności o jeden (max:5)
+                        <br>2. Każda poprawna odpowiedź dodaje jeden punkt
+                        <br>3. Na każde pytanie masz 20 sekund
+                        <br>4. Błędna odpowiedź lub jej brak kończy grę.
+                        <br>5. Każde pytanie ma tylko jedną poprawną odpowiedź. 
+                </div>
               
             </div>
         

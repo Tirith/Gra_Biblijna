@@ -229,7 +229,7 @@ class DatabaseSeeder extends Seeder
                                 'odp2' => 'Moabici',                          
                                 'odp3' => 'Gibeonici',                          
                                 'odp4' => 'Filistyni',                          
-                                'poprawna' => 4,                          
+                                'poprawna' => 3,                          
                                 'trudnosc' => 4,                          
                                    ]);
 
@@ -476,7 +476,7 @@ class DatabaseSeeder extends Seeder
                                    ]);
 
                  DB::table('questions')->insert([
-                                'pytanie' => 'Ile talentów otrzymali słudzy z przypowiści Jezusa?',                               
+                                'pytanie' => 'Ile talentów otrzymali słudzy z przypowieści Jezusa?',                               
                                 'odp1' => '1, 2, 3',                          
                                 'odp2' => '1, 2, 4',                          
                                 'odp3' => '1, 4, 6',                          
@@ -516,7 +516,7 @@ class DatabaseSeeder extends Seeder
                                    ]);
 
                  DB::table('questions')->insert([
-                                'pytanie' => 'Co oznaczały słowa na ścianie "MENE, MENE, TEKEL, PARSN"?',                               
+                                'pytanie' => 'Co oznaczały słowa na ścianie "MENE, MENE, TEKEL, PARSIN"?',                               
                                 'odp1' => 'Medowie i Persowie podbiją Babilon',                          
                                 'odp2' => 'Ty królu stracisz życie',                          
                                 'odp3' => 'Twoje królesto będzie istnieć bardzo długo',                          
@@ -577,9 +577,9 @@ class DatabaseSeeder extends Seeder
 
                  DB::table('questions')->insert([
                                 'pytanie' => 'Kto jako pierwszy został powołany na apostołów?',                               
-                                'odp1' => 'Łukasz i Mateusz',                          
+                                'odp1' => 'Piotr i Mateusz',                          
                                 'odp2' => 'Piotr i Andrzej',                          
-                                'odp3' => 'Jan i Marek',                          
+                                'odp3' => 'Jan i Tomasz',                          
                                 'odp4' => 'Judasz i Szymon',                          
                                 'poprawna' => 2,                          
                                 'trudnosc' => 3,                          
@@ -776,6 +776,88 @@ class DatabaseSeeder extends Seeder
                                 'poprawna' => 2,                          
                                 'trudnosc' => 1,                          
                                    ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Ile miał lat Abraham jak dotarł do Kanaanu?',                               
+                                'odp1' => '75',                          
+                                'odp2' => '49',                          
+                                'odp3' => '56',                          
+                                'odp4' => '74',                          
+                                'poprawna' => 1,                          
+                                'trudnosc' => 4,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Czy Marek był apostołem?',                               
+                                'odp1' => 'Tak',                          
+                                'odp2' => 'Nie',                          
+                                'odp3' => 'Nie wiadomo',                          
+                                'odp4' => 'Prawdopodobnie, nie',                          
+                                'poprawna' => 2,                          
+                                'trudnosc' => 3,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Kim była Hagar?',                               
+                                'odp1' => 'Drugą żoną Abrahama',                          
+                                'odp2' => 'Służącą Abrahama',                          
+                                'odp3' => 'Siostrą Abrahama',                          
+                                'odp4' => 'Matką Abrahama',                          
+                                'poprawna' => 2,                          
+                                'trudnosc' => 3,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Jaki był pierwszy cud dokonany przez Jezusa?',                               
+                                'odp1' => 'Wskrzesił Łazarza',                          
+                                'odp2' => 'Nakarmił tłumy ludzi',                          
+                                'odp3' => 'Chodził po wodzie',                          
+                                'odp4' => 'Zamienił wodę w wino',                          
+                                'poprawna' => 4,                          
+                                'trudnosc' => 2,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Co oznacza słowo "mesjasz"?',                               
+                                'odp1' => 'Wybawca',                          
+                                'odp2' => 'Król',                          
+                                'odp3' => 'Pomazaniec',                          
+                                'odp4' => 'Syn',                          
+                                'poprawna' => 3,                          
+                                'trudnosc' => 2,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Ile lat wcześniej było zapisane proroctwo o miejscu narodzin Jezusa?',                               
+                                'odp1' => '100 lat',                          
+                                'odp2' => '300 lat',                          
+                                'odp3' => '500 lat',                          
+                                'odp4' => '700 lat',                          
+                                'poprawna' => 4,                          
+                                'trudnosc' => 4,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Ile dzieci zostało zabitych przez niedźwiedzia za czasów Elizeusza?',                               
+                                'odp1' => '12',                          
+                                'odp2' => '20',                          
+                                'odp3' => '42',                          
+                                'odp4' => '53',                          
+                                'poprawna' => 3,                          
+                                'trudnosc' => 5,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Jak miał na imię człowiek który zabrał ciało Jezusa po jego śmierci?',                               
+                                'odp1' => 'Józef',                          
+                                'odp2' => 'Szymon',                          
+                                'odp3' => 'Zebedeusz',                          
+                                'odp4' => 'Gamaliel',                          
+                                'poprawna' => 1,                          
+                                'trudnosc' => 5,                          
+                                   ]);
+
+                 
 
 
 
