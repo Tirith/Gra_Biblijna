@@ -91,7 +91,37 @@ if (!isset($pytanie))
     <body>
         <div id="pop">{{$pytanie->poprawna}}</div>
             <div class="container">
-                <a href="{{ url('/') }}"><div class="off"><span class="glyphicon glyphicon-off"></span> </div></a> <div class="off">  {{$_SESSION['nick']}}</div>
+
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 ">
+                        <a href="{{ url('/') }}"><div class="off"><span class="glyphicon glyphicon-off"></span> </div></a> <div class="off">  {{$_SESSION['nick']}}</div>
+                    </div>
+                
+
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 ">
+                                    <div class="menu-container question_count">
+                                            <ul class="">
+                                                <li class="js_nav-item nav-item">Ilość pytań w bazie
+                                                     <ul>
+                                                       <li><i class="margin-r-10 color-base icon-call-out"></i>Poziom 1: {{$quest_dif_1}}</li>
+                                                       <li><i class="margin-r-10 color-base icon-call-out"></i>Poziom 2: {{$quest_dif_2}}</li>
+                                                       <li><i class="margin-r-10 color-base icon-call-out"></i>Poziom 3: {{$quest_dif_3}}</li>
+                                                       <li><i class="margin-r-10 color-base icon-call-out"></i>Poziom 4: {{$quest_dif_4}}</li>
+                                                       <li><i class="margin-r-10 color-base icon-call-out"></i>Poziom 5: {{$quest_dif_5}}</li>
+                                                                                       
+                                                     </ul>
+                                                </li>
+                                            </ul>
+                                    </div>
+                    </div>
+                </div>
+
+
+
+
+                </div>
+                
 
                 <div class="row">
                     <div class="col-lg-12">
@@ -123,7 +153,7 @@ if (!isset($pytanie))
                 </div >
 
                 <div class="row">
-                   <div class="col-sm-3 col-md-3 col-lg-3">
+                   <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
                     <div >
                       <div id="l1" class="odpowiedz">
                         <h5>Odpowiedź 1</h5>
@@ -133,7 +163,7 @@ if (!isset($pytanie))
                     </div>
                    </div>
 
-                   <div class="col-sm-3 col-md-3 col-lg-3">
+                   <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
                     <div class="">
                       <div id="l2" class="odpowiedz">
                         <h5>Odpowiedź 2</h5>
@@ -142,7 +172,7 @@ if (!isset($pytanie))
                     </div>
                    </div>
 
-                    <div class="col-sm-3 col-md-3 col-lg-3">
+                    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
                     <div class="">
                       <div id="l3" class="odpowiedz">
                         <h5>Odpowiedź 3</h5>
@@ -151,7 +181,7 @@ if (!isset($pytanie))
                     </div>
                    </div>
 
-                    <div class="col-sm-3 col-md-3 col-lg-3">
+                    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
                     <div class="">
                       <div id="l4" class="odpowiedz">
                         <h5>Odpowiedź 4</h5>

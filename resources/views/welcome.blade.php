@@ -59,15 +59,20 @@ if (!isset($_SESSION['nick']))
 
 
                </div>
+               <div class="row">
+                <div class="col-md-12 col-lg-12 text-center zasady_nag">Zasady</div>
+               </div>
 
-               <div class="col-md-12 col-lg-12 zasady">   
-                        <h4 class="text-center">Zasady</h4>
-                        <br>1. Po pięciu poprawnych odpowiedziach zwiększa się poziom trudności o jeden (max:5)
+               <div class="row">
+                <div class="col-md-12 col-lg-12 zasady">   
+      
+                            1. Po pięciu poprawnych odpowiedziach zwiększa się poziom trudności o jeden (max:5)
                         <br>2. Każda poprawna odpowiedź dodaje jeden punkt
                         <br>3. Na każde pytanie masz 20 sekund
                         <br>4. Błędna odpowiedź lub jej brak kończy grę.
                         <br>5. Każde pytanie ma tylko jedną poprawną odpowiedź. 
                 </div>
+              </div>
               
             </div>
         

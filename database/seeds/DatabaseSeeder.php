@@ -536,7 +536,7 @@ class DatabaseSeeder extends Seeder
                                    ]);
 
                  DB::table('questions')->insert([
-                                'pytanie' => 'Ile aniołów zobaczyli pasterze zaraz po nardzonach Jezusa?',                               
+                                'pytanie' => 'Ile aniołów zobaczyli pasterze zaraz po narodzinach Jezusa?',                               
                                 'odp1' => '1',                          
                                 'odp2' => '2',                          
                                 'odp3' => '12',                          
@@ -626,7 +626,7 @@ class DatabaseSeeder extends Seeder
                                    ]);
 
                  DB::table('questions')->insert([
-                                'pytanie' => 'Ile apostołów miał Jezus',                               
+                                'pytanie' => 'Ile apostołów miał Jezus?',                               
                                 'odp1' => '2',                          
                                 'odp2' => '6',                          
                                 'odp3' => '12',                          
@@ -857,7 +857,225 @@ class DatabaseSeeder extends Seeder
                                 'trudnosc' => 5,                          
                                    ]);
 
-                 
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Kto walczył z aniołem?',                               
+                                'odp1' => 'Abraham',                          
+                                'odp2' => 'Izaak',                          
+                                'odp3' => 'Jakub',                          
+                                'odp4' => 'Ezaw',                          
+                                'poprawna' => 3,                          
+                                'trudnosc' => 3,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Czy "Septuaginta" to?',                               
+                                'odp1' => 'Hebrajska wersja nowego testamentu',                          
+                                'odp2' => 'Grecka wersja starego testamentu',                          
+                                'odp3' => 'Łacińska wersja biblii',                          
+                                'odp4' => 'Angielska wersja biblii',                          
+                                'poprawna' => 2,                          
+                                'trudnosc' => 4,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Jak nazywał się ojciec Abrahama?',                               
+                                'odp1' => 'Lamech',                          
+                                'odp2' => 'Nie jest znany z imienia',                          
+                                'odp3' => 'Izaak',                          
+                                'odp4' => 'Terach',                          
+                                'poprawna' => 4,                          
+                                'trudnosc' => 3,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Ile lat spisywano biblię?',                               
+                                'odp1' => 'około 200 lat',                          
+                                'odp2' => 'około 500 lat',                          
+                                'odp3' => 'około 1000 lat',                          
+                                'odp4' => 'około 1500 lat',                          
+                                'poprawna' => 4,                          
+                                'trudnosc' => 2,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Jak nazywał się ojciec Aarona?',                               
+                                'odp1' => 'Amram',                          
+                                'odp2' => 'Lewi',                          
+                                'odp3' => 'Nadab',                          
+                                'odp4' => 'Nie jest znany z imienia',                          
+                                'poprawna' => 1,                          
+                                'trudnosc' => 5,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Kto podpierał ręce Mojżeszowi podczas bitwy z Amalekitami?',                               
+                                'odp1' => 'Aaron i Abichu',                          
+                                'odp2' => 'Aaron i Chur',                          
+                                'odp3' => 'Abichu i Chur',                          
+                                'odp4' => 'Itamar i Chur',                          
+                                'poprawna' => 2,                          
+                                'trudnosc' => 5,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Ile lat izraelici błąkali się po pustkowiu?',                               
+                                'odp1' => '4',                          
+                                'odp2' => '14',                          
+                                'odp3' => '40',                          
+                                'odp4' => '44',                          
+                                'poprawna' => 3,                          
+                                'trudnosc' => 1,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Którzy synowie Aarona ponieśli śmierć z wyroku Jehowy??',                               
+                                'odp1' => 'Nadab i Abichu',                          
+                                'odp2' => 'Nadab i Eleazar',                          
+                                'odp3' => 'Itamar i Abichu',                          
+                                'odp4' => 'Itamar i Eleazar',                          
+                                'poprawna' => 1,                          
+                                'trudnosc' => 4,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Kim jest "Anioł Otchłani"?',                               
+                                'odp1' => 'Jehowa',                          
+                                'odp2' => 'Jezus',                          
+                                'odp3' => 'Szatan',                          
+                                'odp4' => 'Demony',                          
+                                'poprawna' => 2,                          
+                                'trudnosc' => 5,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Abraham urodził się w...?',                               
+                                'odp1' => '2018r p.n.e',                          
+                                'odp2' => '1513r p.n.e',                          
+                                'odp3' => '1900r p.n.e',                          
+                                'odp4' => '3000r p.n.e',                          
+                                'poprawna' => 1,                          
+                                'trudnosc' => 5,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Ilu żołnierzy asyryjskich zabił jeden anioł jednej nocy?',                               
+                                'odp1' => '10 000',                          
+                                'odp2' => '55 000',                          
+                                'odp3' => '125 000',                          
+                                'odp4' => '185 000',                          
+                                'poprawna' => 4,                          
+                                'trudnosc' => 2,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Na jakiej górze osiadła arka po potopie?',                               
+                                'odp1' => 'Synaj',                          
+                                'odp2' => 'Ararat',                          
+                                'odp3' => 'Moria',                          
+                                'odp4' => 'Hermon',                          
+                                'poprawna' => 2,                          
+                                'trudnosc' => 2,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Z jakiego drewna była wykonana arka przymierza?',                               
+                                'odp1' => 'Akacja',                          
+                                'odp2' => 'Sosna',                          
+                                'odp3' => 'Dąb',                          
+                                'odp4' => 'Drzewo żywiczne',                          
+                                'poprawna' => 1,                          
+                                'trudnosc' => 4,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Kto był założycielem Babilonu?',                               
+                                'odp1' => 'Nebukadnecar',                          
+                                'odp2' => 'Hammurabi',                          
+                                'odp3' => 'Nabopolasar',                          
+                                'odp4' => 'Nimrod',                          
+                                'poprawna' => 4,                          
+                                'trudnosc' => 2,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Kim była Cyppora?',                               
+                                'odp1' => 'Żona Mojżesza',                          
+                                'odp2' => 'Matka Mojżesza',                          
+                                'odp3' => 'Siostra Abrahama',                          
+                                'odp4' => 'Matka Lota',                          
+                                'poprawna' => 1,                          
+                                'trudnosc' => 3,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Kto był założycielem Babilonu?',                               
+                                'odp1' => 'Nebukadnecar',                          
+                                'odp2' => 'Hammurabi',                          
+                                'odp3' => 'Nabopolasar',                          
+                                'odp4' => 'Nimrod',                          
+                                'poprawna' => 4,                          
+                                'trudnosc' => 2,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'Co oznacza słowo "Ewangelia"?',                               
+                                'odp1' => 'Dobra nowina',                          
+                                'odp2' => 'Księga',                          
+                                'odp3' => 'Proroctwo',                          
+                                'odp4' => 'Sprawozdanie',                          
+                                'poprawna' => 1,                          
+                                'trudnosc' => 1,                          
+                                   ]);
+
+                 DB::table('questions')->insert([
+                                'pytanie' => 'W jakim zborze była Dorkas?',                               
+                                'odp1' => 'Korynt',                          
+                                'odp2' => 'Efez',                          
+                                'odp3' => 'Tesalonika',                          
+                                'odp4' => 'Joppa',                          
+                                'poprawna' => 4,                          
+                                'trudnosc' => 5,                          
+                                   ]);
+
+                                   DB::table('questions')->insert([
+                                'pytanie' => 'Kto spisał księgi Kronik?',                               
+                                'odp1' => 'Elizeusz',                          
+                                'odp2' => 'Ezdrasz',                          
+                                'odp3' => 'Dawid',                          
+                                'odp4' => 'Salomon',                          
+                                'poprawna' => 2,                          
+                                'trudnosc' => 5,                          
+                                   ]);
+
+                                   DB::table('questions')->insert([
+                                'pytanie' => 'Kto spisał księgę Estery?',                               
+                                'odp1' => 'Estera',                          
+                                'odp2' => 'Mardocheusz',                          
+                                'odp3' => 'Natan',                          
+                                'odp4' => 'Ezdrasz',                          
+                                'poprawna' => 2,                          
+                                'trudnosc' => 4,                          
+                                   ]);
+
+                                   DB::table('questions')->insert([
+                                'pytanie' => 'Kto spisał Dzieje Apostolskie',                               
+                                'odp1' => 'Piotr',                          
+                                'odp2' => 'Jan',                          
+                                'odp3' => 'Paweł',                          
+                                'odp4' => 'Łukasz',                          
+                                'poprawna' => 4,                          
+                                'trudnosc' => 3,                          
+                                   ]);
+
+
+
+
+
+
+
+
+
+
 
 
 

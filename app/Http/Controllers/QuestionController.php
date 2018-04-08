@@ -45,7 +45,12 @@ class QuestionController extends Controller
         
         
         $ile = Question::count();
-        return view('question', compact(['pytanie', 'winners']));
+        $quest_dif_1 = Question::where('trudnosc', 1)->count();
+        $quest_dif_2 = Question::where('trudnosc', 2)->count();
+        $quest_dif_3 = Question::where('trudnosc', 3)->count();
+        $quest_dif_4 = Question::where('trudnosc', 4)->count();
+        $quest_dif_5 = Question::where('trudnosc', 5)->count();
+        return view('question', compact(['pytanie', 'winners', 'quest_dif_1', 'quest_dif_2', 'quest_dif_3', 'quest_dif_4', 'quest_dif_5']));
     }
 
     /**

@@ -84,7 +84,7 @@ body{
 .pytanie {
 	border: 2px solid #6B5511;
 	text-align: center;
-	height:90px;
+	height:130px;
 	margin-bottom: 20px;
 	border-radius: 6px;
 	font-size: 28px;
@@ -108,6 +108,14 @@ body{
 	
 }
 
+.question_count {
+	display: inline-block;
+	font-size: 13px;
+	font-family: 'Montserrat', sans-serif;
+	color: #EAE7B0;
+	
+}
+
 .pytanie_nag {
 	margin-top: 20px;
 	border-radius: 6px;
@@ -120,7 +128,6 @@ body{
 
 .zasady{
 	text-align: left;
-	
 	padding: 7px;
 	border: 1px solid #E7A14E;
 	border-radius: 6px;
@@ -129,6 +136,14 @@ body{
 	color: #E7A14E;
 	text-shadow: 3px 3px #000;
 
+}
+
+.zasady_nag{
+	margin-top: 20px;
+	font-size: 18px;
+	font-family: 'Montserrat', sans-serif;
+	color: #E7A14E;
+	text-shadow: 3px 3px #000;
 }
 
 .wyniki{
@@ -299,5 +314,86 @@ div.start{
 	-webkit-box-shadow: 5px 7px 20px 0px rgba(0,0,0,1);
 	-moz-box-shadow: 5px 7px 20px 0px rgba(0,0,0,1);
 	box-shadow: 5px 7px 20px 0px rgba(0,0,0,1);
+}
+
+
+
+
+ul {
+     list-style: none;
+     float: left;
+      cursor: pointer;
+
+
+}
+
+ul > li {
+     margin: 0;
+     padding: 0;
+     float: left; 
+     position: relative;
+     height: 30px;
+}
+
+ul > li > a {
+     padding: 10px; 
+     color: #EBC38E;
+     text-decoration: none;
+      cursor: pointer;
+}
+
+ul > li > a:hover, 
+ul > li:hover > a {
+     color: #de5f44;
+     text-decoration: underline;
+}
+
+ul > li ul {
+     padding: 0;
+     position: absolute; 
+     visibility: hidden;
+     left: 0px; 
+     top: 20px; 
+     cursor: pointer;
+     width: 200px; 
+     text-align: left;
+     transform: scaleY(0); /* zwijamy cały element */
+     -webkit-transform: scaleY(0);
+     transform-origin: 50% 0; /* ustawiamy punkt zwijania względem środka górnej krawędzi */
+     -webkit-transform-origin: 50% 0;
+     transition: 200ms; /* wydłużamy wykonywanie stylów */
+}
+
+ul li:hover > ul {
+     visibility: visible;
+     transform: scaleY(1); /* rozwijamy element do całej jego wysokości */
+     -webkit-transform: scaleY(1);
+}
+
+ul > li ul ul {
+     left: 200px; 
+     top: -1px;
+}
+
+ul > li ul li {
+     margin: 0; 
+     padding: 0;
+     position: relative; 
+     float: none; 
+     height: auto;
+}
+
+ul > li ul li a {
+     padding: 10px 20px; 
+     color: #EBC38E; 
+     text-decoration: none;
+     display: block;
+}
+
+ul > li ul li a:hover,
+ul > li ul li:hover > a {
+     text-decoration: none;
+    
+     background-color: #f26c4f;
 }
 
