@@ -1058,12 +1058,22 @@ class DatabaseSeeder extends Seeder
                                    ]);
 
                                    DB::table('questions')->insert([
-                                'pytanie' => 'Kto spisał Dzieje Apostolskie',                               
+                                'pytanie' => 'Kto spisał Dzieje Apostolskie?',                               
                                 'odp1' => 'Piotr',                          
                                 'odp2' => 'Jan',                          
                                 'odp3' => 'Paweł',                          
                                 'odp4' => 'Łukasz',                          
                                 'poprawna' => 4,                          
+                                'trudnosc' => 3,                          
+                                   ]);
+
+                                   DB::table('questions')->insert([
+                                'pytanie' => 'Kto jest ojcem wszystkich wierzących?',                               
+                                'odp1' => 'Abraham',                          
+                                'odp2' => 'Noe',                          
+                                'odp3' => 'Jezus',                          
+                                'odp4' => 'Abel',                          
+                                'poprawna' => 1,                          
                                 'trudnosc' => 3,                          
                                    ]);
 
