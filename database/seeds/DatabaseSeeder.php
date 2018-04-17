@@ -344,7 +344,7 @@ class DatabaseSeeder extends Seeder
                                    ]);
 
         DB::table('questions')->insert([
-                                'pytanie' => 'Koniec niewoli babilońskiej izraelitów był w roku?',                               
+                                'pytanie' => 'Koniec niewoli izraelitów był w roku?',                               
                                 'odp1' => '535 p.n.e',                          
                                 'odp2' => '537 p.n.e',                          
                                 'odp3' => '536 p.n.e',                          
@@ -522,7 +522,7 @@ class DatabaseSeeder extends Seeder
                                 'odp3' => 'Twoje królesto będzie istnieć bardzo długo',                          
                                 'odp4' => 'Ty królu będzisz niezwyciężonym wodzem',                          
                                 'poprawna' => 1,                          
-                                'trudnosc' => 3,                          
+                                'trudnosc' => 2,                          
                                    ]);
 
                  DB::table('questions')->insert([
@@ -572,7 +572,7 @@ class DatabaseSeeder extends Seeder
                                 'odp3' => 'Hioba',                          
                                 'odp4' => 'Mojżesza',                          
                                 'poprawna' => 1,                          
-                                'trudnosc' => 3,                          
+                                'trudnosc' => 5,                          
                                    ]);
 
                  DB::table('questions')->insert([
@@ -1058,7 +1058,7 @@ class DatabaseSeeder extends Seeder
                                    ]);
 
                                    DB::table('questions')->insert([
-                                'pytanie' => 'Kto spisał Dzieje Apostolskie?',                               
+                                'pytanie' => 'Kto spisał Dzieje Apostolskie',                               
                                 'odp1' => 'Piotr',                          
                                 'odp2' => 'Jan',                          
                                 'odp3' => 'Paweł',                          
@@ -1066,114 +1066,6 @@ class DatabaseSeeder extends Seeder
                                 'poprawna' => 4,                          
                                 'trudnosc' => 3,                          
                                    ]);
-
-                                   DB::table('questions')->insert([
-                                'pytanie' => 'Po której stronie Edenu stali cherubowie?',                               
-                                'odp1' => 'Północnej',                          
-                                'odp2' => 'Południowej',                          
-                                'odp3' => 'Wschodniej',                          
-                                'odp4' => 'Zachodniej',                          
-                                'poprawna' => 3,                          
-                                'trudnosc' => 3,                          
-                                   ]);
-
-                                   DB::table('questions')->insert([
-                                'pytanie' => 'Edom to przydomek...',                               
-                                'odp1' => 'Jakuba',                          
-                                'odp2' => 'Ezawa',                          
-                                'odp3' => 'Izaaka',                          
-                                'odp4' => 'Ismaela',                          
-                                'poprawna' => 2,                          
-                                'trudnosc' => 4,                          
-                                   ]);
-
-                                   DB::table('questions')->insert([
-                                'pytanie' => 'Kim był Elkana?',                               
-                                'odp1' => 'Ojciec Aarona',                          
-                                'odp2' => 'Syn Koracha',                          
-                                'odp3' => 'Dziadek Dawida',                          
-                                'odp4' => 'Brat Miriam',                          
-                                'poprawna' => 2,                          
-                                'trudnosc' => 3,                          
-                                   ]);
-
-                                   DB::table('questions')->insert([
-                                'pytanie' => 'Ile miał lat Adam jak urodził się Set?',                               
-                                'odp1' => '100',                          
-                                'odp2' => '130',                          
-                                'odp3' => '200',                          
-                                'odp4' => '250',                          
-                                'poprawna' => 2,                          
-                                'trudnosc' => 3,                          
-                                   ]);
-
-                                   DB::table('questions')->insert([
-                                'pytanie' => 'Jakie drzewo Jezus przekłął?',                               
-                                'odp1' => 'Palma bananowa',                          
-                                'odp2' => 'Oliwne',                          
-                                'odp3' => 'Akacjowe',                          
-                                'odp4' => 'Figowe',                          
-                                'poprawna' => 4,                          
-                                'trudnosc' => 2,                          
-                                   ]);
-
-                                   DB::table('questions')->insert([
-                                'pytanie' => 'Czyim sługą był Haman?',                               
-                                'odp1' => 'Aswerusa',                          
-                                'odp2' => 'Nebukadnecara',                          
-                                'odp3' => 'Dariusza',                          
-                                'odp4' => 'Cyrusa',                          
-                                'poprawna' => 1,                          
-                                'trudnosc' => 4,                          
-                                   ]);
-
-
-                                   DB::table('questions')->insert([
-                                'pytanie' => 'W jakim mieście żył Hiob',                               
-                                'odp1' => 'Ur',                          
-                                'odp2' => 'Uc',                          
-                                'odp3' => 'Midian',                          
-                                'odp4' => 'Adab',                          
-                                'poprawna' => 2,                          
-                                'trudnosc' => 4,                          
-                                   ]);
-
-                                   DB::table('questions')->insert([
-                                'pytanie' => 'Co oznacza imię Izaak?',                               
-                                'odp1' => 'Radość',                          
-                                'odp2' => 'Dar od Boga',                          
-                                'odp3' => 'Ofiara',                          
-                                'odp4' => 'Śmiech',                          
-                                'poprawna' => 4,                          
-                                'trudnosc' => 4,                          
-                                   ]);
-
-                                   DB::table('questions')->insert([
-                                'pytanie' => 'Za co Ezaw sprzedał swoje pierworództwo?',                               
-                                'odp1' => 'Kilka zlotych monet',                          
-                                'odp2' => 'Miskę soczewicy',                          
-                                'odp3' => 'Dwunastu służących',                          
-                                'odp4' => 'Oddał za darmo',                          
-                                'poprawna' => 2,                          
-                                'trudnosc' => 2,                          
-                                   ]);
-
-                                   DB::table('questions')->insert([
-                                'pytanie' => 'W którym roku izraelici wyszli z Egiptu?',                               
-                                'odp1' => '1320 p.n.e',                          
-                                'odp2' => '1436 p.n.e',                          
-                                'odp3' => '1513 p.n.e',                          
-                                'odp4' => '1725 p.n.e',                          
-                                'poprawna' => 3,                          
-                                'trudnosc' => 3,                          
-                                   ]);
-
-
-
-
-
-
-
 
 
 
